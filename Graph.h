@@ -12,7 +12,6 @@ typedef struct _Vertex {//顶点
 	Edge* first;		//第一条边
 }Vertex, AdjList;
 
-
 class Graph
 {
 public:
@@ -21,6 +20,7 @@ public:
 	void showDFS();
 	void showBFS();
 	~Graph();
+
 private:
 	int Location(char data);
 

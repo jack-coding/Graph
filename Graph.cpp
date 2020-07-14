@@ -4,6 +4,7 @@
 
 using namespace std;
 
+
 Graph::Graph()
 {
 	this->adjList = new Vertex[MaxSize];
