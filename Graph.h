@@ -19,6 +19,7 @@ public:
 	void Create();
 	void showDFS();
 	void showBFS();
+	void DistroyGraph();//Ïú»ÙÍ¼
 	~Graph();
 
 private:
