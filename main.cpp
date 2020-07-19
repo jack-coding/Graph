@@ -16,11 +16,15 @@
 using namespace std;
 
 int main(int argc, char * argv) {
-	Graph g1;
-	g1.Create();
-	g1.showBFS();
-	g1.DistroyGraph();
-
+	{
+		Graph g1;
+		g1.Create();
+		g1.showBFS();
+		char v1, v2;
+		cout << "\n请输入起点以及终点:";
+		cin >> v1 >> v2;
+		g1.find_shortestpath(g1.Location(v1), g1.Location(v2), 0);
+	}
 	_CrtDumpMemoryLeaks();
 	system("pause");
 	return EXIT_SUCCESS;
